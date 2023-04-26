@@ -21,7 +21,7 @@ starterProjects:
 components:
   - name: dotnet
     container:
-      image: quay.io/ozerdur/multidotnetquay
+      image: registry.redhat.io/devspaces/udi-rhel8:3.5
       args: ["tail", "-f", "/dev/null"]
       mountSources: true
       env:
