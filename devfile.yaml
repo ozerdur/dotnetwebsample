@@ -36,6 +36,12 @@ components:
       endpoints:
         - name: http-dotnet50
           targetPort: 5022
+      volumeMounts:
+        - name: nuget
+          path: /home/user/.nuget
+  - name: nuget
+    volume:
+      size: 1G
 commands:
   - id: build
     exec:
